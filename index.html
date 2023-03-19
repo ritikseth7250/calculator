@@ -1,0 +1,26 @@
+<div class="calculator">
+    <link rel="stylesheet" href="/style.css">
+    <audio id="click-sound" src="/music/mixkit-mouse-click-close-1113.wav"></audio>
+    <script src="./cal.js"></script>
+<div class="calculator">
+  <input type="text" id="result" disabled>
+  <div class="keys">
+    <button class="operator" onclick="clearResult()">C</button>
+    <button class="operator" onclick="updateResult('/')">/</button>
+    <button class="operator" onclick="updateResult('*')">*</button>
+    <button class="operator" onclick="updateResult('-')">-</button>
+    <button class="operator" onclick="updateResult('+')">+</button>
+    <button onclick="updateResult('7'); playClickSound()">7</button>
+    <button onclick="updateResult('8'); playClickSound()">8</button>
+    <button onclick="updateResult('9'); playClickSound()">9</button>
+    <button onclick="updateResult('4'); playClickSound()">4</button>
+    <button onclick="updateResult('5'); playClickSound()">5</button>
+    <button onclick="updateResult('6'); playClickSound()">6</button>
+    <button onclick="updateResult('1'); playClickSound()">1</button>
+    <button onclick="updateResult('2'); playClickSound()">2</button>
+    <button onclick="updateResult('3'); playClickSound()">3</button>
+    <button onclick="updateResult('0'); playClickSound()">0</button>
+    <button onclick="updateResult('.'); playClickSound()">.</button>
+    <button class="equals" onclick="calculate(); playClickSound()">=</button>
+  </div>
+</div>
